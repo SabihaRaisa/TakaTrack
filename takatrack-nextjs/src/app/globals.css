@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap');
+:root{--bg:#f4f7f5;--surface:#fff;--ink:#15251e;--muted:#66776f;--line:#dce6e0;--green:#087f5b;--green-light:#e4f5ed;--red:#bd3b30;--amber:#9a6700;--shadow:0 10px 30px rgba(22,53,39,.055)}
+*{box-sizing:border-box}html{min-height:100%;background:var(--bg)}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Hind Siliguri",sans-serif;font-size:14px;line-height:1.5}button,input,select{font:inherit}button{cursor:pointer}button:disabled{opacity:.55;cursor:not-allowed}.app{max-width:1180px;margin:0 auto;padding:28px 22px 60px}.topbar{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:24px}.brand{display:flex;align-items:center;gap:12px}.brand-mark{width:42px;height:42px;border-radius:14px;background:var(--green);color:white;display:grid;place-items:center;font-weight:800;font-size:22px}.brand h1{font-size:21px;margin:0;letter-spacing:-.7px}.brand p{margin:2px 0 0;color:var(--muted);font-size:12px}.top-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.user-pill{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 12px;color:var(--muted);max-width:260px;overflow:hidden;text-overflow:ellipsis}.btn{border:0;border-radius:10px;background:var(--green);color:white;padding:10px 14px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:7px}.btn:hover{filter:brightness(.96)}.btn.secondary{background:var(--green-light);color:var(--green)}.btn.ghost{background:transparent;color:var(--muted);border:1px solid var(--line)}.btn.danger{background:#fff0ee;color:var(--red)}.btn.small{padding:6px 9px;font-size:12px;border-radius:8px}.nav{display:flex;gap:5px;overflow:auto;padding:5px;background:#eaf0ec;border-radius:14px;margin-bottom:22px}.nav button{border:0;background:transparent;color:var(--muted);font-weight:700;padding:10px 14px;border-radius:10px;white-space:nowrap}.nav button.active{background:#fff;color:var(--green);box-shadow:0 2px 8px rgba(0,0,0,.04)}.page-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin:0 0 18px}.page-head h2{margin:0;font-size:25px;letter-spacing:-.8px}.page-head p{margin:4px 0 0;color:var(--muted)}.grid{display:grid;gap:14px}.stats{grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:16px}.two{grid-template-columns:1.15fr .85fr}.three{grid-template-columns:repeat(3,minmax(0,1fr))}.card{background:var(--surface);border:1px solid var(--line);border-radius:17px;padding:18px;box-shadow:var(--shadow);min-width:0}.stat-label{color:var(--muted);font-size:12px;font-weight:700;display:flex;align-items:center;gap:7px}.stat-value{font-size:26px;font-weight:800;letter-spacing:-.8px;margin-top:8px;overflow-wrap:anywhere}.stat-sub{color:var(--muted);font-size:12px;margin-top:3px}.green{color:var(--green)}.red{color:var(--red)}.amber{color:var(--amber)}.card-title{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px}.card-title h3{font-size:15px;margin:0}.muted{color:var(--muted)}.small-text{font-size:12px}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.field{display:flex;flex-direction:column;gap:6px}.field label{font-size:12px;font-weight:700;color:var(--muted)}.field input,.field select,.search{border:1px solid var(--line);border-radius:10px;padding:11px 12px;background:#fbfdfb;color:var(--ink);min-width:0;width:100%;outline-color:var(--green)}.field.full{grid-column:1/-1}.form-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;white-space:nowrap}th{text-align:left;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.6px;padding:10px 8px;border-bottom:1px solid var(--line)}td{padding:12px 8px;border-bottom:1px solid #edf1ee}tr:last-child td{border-bottom:0}.amount{font-weight:800}.badge{display:inline-flex;border-radius:999px;padding:4px 8px;font-size:11px;font-weight:700;background:#edf2ee;color:var(--muted)}.badge.income{background:var(--green-light);color:var(--green)}.badge.expense{background:#fff0ee;color:var(--red)}.progress{height:8px;border-radius:99px;background:#edf1ee;overflow:hidden;margin:10px 0}.progress span{display:block;height:100%;background:var(--green);border-radius:99px}.progress span.warn{background:#d79b20}.progress span.over{background:var(--red)}.budget-row{padding:13px 0;border-bottom:1px solid #edf1ee}.budget-row:last-child{border-bottom:0}.budget-top{display:flex;justify-content:space-between;gap:12px}.goal-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.goal-amounts{display:flex;justify-content:space-between;gap:10px;font-size:12px;color:var(--muted)}.insight{padding:12px 13px;background:#f5faf7;border:1px solid #e2eee6;border-radius:12px;margin-top:9px}.insight strong{display:block;margin-bottom:3px}.empty{text-align:center;padding:28px 12px;color:var(--muted)}.notice{padding:12px 14px;border-radius:12px;background:#fff7df;border:1px solid #f3e4af;color:#735200;margin-bottom:16px}.error{color:var(--red);font-size:12px;margin-top:8px}.success{color:var(--green);font-size:12px;margin-top:8px}.auth-shell{min-height:85vh;display:grid;place-items:center;padding:24px}.auth-card{width:min(100%,430px);background:white;border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:var(--shadow)}.auth-card h2{font-size:24px;margin:0}.auth-card>p{color:var(--muted);margin:7px 0 22px}.auth-card .field{margin-bottom:13px}.divider{border:0;border-top:1px solid var(--line);margin:18px 0}.chart{height:250px;width:100%}.footer-note{font-size:11px;color:var(--muted);text-align:center;margin-top:22px}.inline-tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.inline-tools .search{width:min(100%,240px)}.month-select{width:auto;max-width:170px;border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px}.two-col-form{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}.hide-mobile{display:table-cell}
+@media(max-width:850px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.two{grid-template-columns:1fr}.three{grid-template-columns:1fr 1fr}.app{padding:18px 14px 40px}.page-head h2{font-size:22px}}
+@media(max-width:560px){.topbar{align-items:flex-start}.brand h1{font-size:18px}.brand p{max-width:150px}.user-pill{display:none}.three,.goal-grid,.form-grid,.two-col-form{grid-template-columns:1fr}.page-head{align-items:flex-start;flex-direction:column}.card{padding:14px}.stat-value{font-size:22px}.nav button{padding:9px 11px}.hide-mobile{display:none}.app{padding:14px 10px 30px}}
+
+
+
+/* ===== CONNECT THEMES TO ORIGINAL TAKATRACK COLORS ===== */
+
+:root,
+html[data-theme="white"] {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --ink: #202124;
+  --muted: #686b70;
+  --line: #e5e7eb;
+  --green: #40464f;
+  --green-light: #f0f1f3;
+  --red: #bd3b30;
+  --amber: #9a6700;
+  --shadow: 0 10px 30px rgba(22, 53, 39, 0.055);
+}
+
+html[data-theme="pink"] {
+  --bg: #fff1f6;
+  --surface: #ffffff;
+  --ink: #54243c;
+  --muted: #91657c;
+  --line: #f2cddd;
+  --green: #d63384;
+  --green-light: #ffe0ed;
+  --red: #bd3b30;
+  --amber: #9a6700;
+}
+
+html[data-theme="blue"] {
+  --bg: #eef5ff;
+  --surface: #ffffff;
+  --ink: #1c3558;
+  --muted: #647b9c;
+  --line: #d3e2f8;
+  --green: #2878d0;
+  --green-light: #dcecff;
+}
+
+html[data-theme="purple"] {
+  --bg: #f5f0ff;
+  --surface: #ffffff;
+  --ink: #382456;
+  --muted: #807098;
+  --line: #e1d5f5;
+  --green: #805ad5;
+  --green-light: #eae0ff;
+}
+
+html[data-theme="green"] {
+  --bg: #edf8f0;
+  --surface: #ffffff;
+  --ink: #173d29;
+  --muted: #64816d;
+  --line: #cde8d3;
+  --green: #168653;
+  --green-light: #dff4e5;
+}
+
+html[data-theme="yellow"] {
+  --bg: #fffbea;
+  --surface: #ffffff;
+  --ink: #514016;
+  --muted: #8a794e;
+  --line: #f1e3b5;
+  --green: #b88900;
+  --green-light: #fff2c2;
+}
+
+html[data-theme="red"] {
+  --bg: #fff1f1;
+  --surface: #ffffff;
+  --ink: #57252b;
+  --muted: #98676d;
+  --line: #f3d0d3;
+  --green: #dc3545;
+  --green-light: #ffe0e3;
+}
+
+html[data-theme="magenta"] {
+  --bg: #fff0fc;
+  --surface: #ffffff;
+  --ink: #54204f;
+  --muted: #94618f;
+  --line: #f0c9eb;
+  --green: #c026d3;
+  --green-light: #fbe0f8;
+}
+
+html[data-theme="orange"] {
+  --bg: #fff5ec;
+  --surface: #ffffff;
+  --ink: #542d19;
+  --muted: #97745e;
+  --line: #f4d8c1;
+  --green: #ea580c;
+  --green-light: #ffead8;
+}
+
+html[data-theme="teal"] {
+  --bg: #eafaf8;
+  --surface: #ffffff;
+  --ink: #164440;
+  --muted: #608581;
+  --line: #c8e9e5;
+  --green: #0d9488;
+  --green-light: #d9f5f1;
+}
+
+html[data-theme="mint"] {
+  --bg: #edfff7;
+  --surface: #ffffff;
+  --ink: #174b37;
+  --muted: #638b79;
+  --line: #c9f0df;
+  --green: #10a879;
+  --green-light: #d8f9e9;
+}
+
+html[data-theme="lavender"] {
+  --bg: #f6f2ff;
+  --surface: #ffffff;
+  --ink: #3f3265;
+  --muted: #8275a2;
+  --line: #e2d8fa;
+  --green: #8065d8;
+  --green-light: #ebe3ff;
+}
+
+html[data-theme="brown"] {
+  --bg: #f8f1e9;
+  --surface: #fffdf9;
+  --ink: #493325;
+  --muted: #8c7564;
+  --line: #e8d7c7;
+  --green: #8b5e3c;
+  --green-light: #f0e2d3;
+}
+
+/* Dark mode */
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #111827;
+  --surface: #1f2937;
+  --ink: #f3f4f6;
+  --muted: #aab6c5;
+  --line: #374151;
+  --green: #4adea4;
+  --green-light: #263f3a;
+  --red: #ff827a;
+  --amber: #facc15;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* Apply the selected colors across the original layout */
+html[data-theme] {
+  background: var(--bg);
+}
+
+html[data-theme] body {
+  background: var(--bg) !important;
+  color: var(--ink) !important;
+}
+
+html[data-theme] .card,
+html[data-theme] .auth-card {
+  background: var(--surface) !important;
+  color: var(--ink) !important;
+  border-color: var(--line) !important;
+}
+
+html[data-theme] .nav {
+  background: var(--green-light) !important;
+}
+
+html[data-theme] .nav button.active {
+  background: var(--surface) !important;
+  color: var(--green) !important;
+}
+
+html[data-theme] .field input,
+html[data-theme] .field select,
+html[data-theme] .search,
+html[data-theme] .month-select {
+  background: var(--surface) !important;
+  color: var(--ink) !important;
+  border-color: var(--line) !important;
+}
+
+html[data-theme] .user-pill {
+  background: var(--surface) !important;
+  color: var(--muted) !important;
+  border-color: var(--line) !important;
+}
+
+html[data-theme] .insight {
+  background: var(--green-light) !important;
+  color: var(--ink) !important;
+  border-color: var(--line) !important;
+}
+
+html[data-theme] td,
+html[data-theme] th,
+html[data-theme] .budget-row {
+  border-color: var(--line);
+}
+
+html[data-theme] .progress {
+  background: var(--line);
+}
+
+html[data-theme] .progress span {
+  background: var(--green);
+}
+
+/* Keep the theme menu white and readable in every mode */
+html[data-theme] .theme-toggle,
+html[data-theme] .theme-dropdown,
+html[data-theme] .theme-choice {
+  background: #ffffff !important;
+  color: #222222 !important;
+  border-color: #e5e7eb !important;
+}
+
+html[data-theme] .theme-dropdown-heading strong {
+  color: #222222 !important;
+}
+
+html[data-theme] .theme-dropdown-heading span,
+html[data-theme] .theme-footer {
+  color: #666666 !important;
+}
+
+html[data-theme] .theme-choice:hover,
+html[data-theme] .theme-choice.selected {
+  background: #f3f4f6 !important;
+  color: #111111 !important;
+  border-color: var(--green) !important;
+}
+
+/* ===== THEME-MATCHED BUTTON DESIGN ===== */
+
+
+/* =====================================
+   TAKATRACK — MODERN BUTTON REDESIGN
+   ===================================== */
+
+/* Main action buttons */
+html[data-theme] .btn:not(.secondary):not(.ghost):not(.danger) {
+  background: var(--green) !important;
+  color: #fff !important;
+  border: 1px solid var(--green) !important;
+  border-radius: 12px !important;
+  padding: 11px 17px !important;
+  font-weight: 700;
+  box-shadow: 0 4px 10px color-mix(in srgb, var(--green) 18%, transparent);
+  transition: all 0.2s ease;
+}
+
+html[data-theme] .btn:not(.secondary):not(.ghost):not(.danger):hover {
+  filter: brightness(0.92);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 16px color-mix(in srgb, var(--green) 24%, transparent);
+}
+
+/* Secondary buttons — Refresh and similar actions */
+html[data-theme] .btn.secondary {
+  background: var(--green-light) !important;
+  color: var(--green) !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 12px !important;
+  padding: 11px 17px !important;
+  transition: all 0.2s ease;
+}
+
+html[data-theme] .btn.secondary:hover {
+  border-color: var(--green) !important;
+  transform: translateY(-1px);
+}
+
+/* Outline buttons */
+html[data-theme] .btn.ghost {
+  background: var(--surface) !important;
+  color: var(--green) !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 12px !important;
+  transition: all 0.2s ease;
+}
+
+html[data-theme] .btn.ghost:hover {
+  background: var(--green-light) !important;
+  border-color: var(--green) !important;
+}
+
+/* Danger buttons remain red for safety */
+html[data-theme] .btn.danger {
+  background: #fff0ee !important;
+  color: #bd3b30 !important;
+  border: 1px solid #f2d0cb !important;
+  border-radius: 12px !important;
+}
+
+/* =====================================
+   MODERN THEME PICKER
+   ===================================== */
+
+html[data-theme] .theme-menu {
+  position: relative;
+  z-index: 200;
+}
+
+html[data-theme] .theme-toggle {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 11px 16px !important;
+  background: #fff !important;
+  color: #252525 !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 14px !important;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease;
+}
+
+html[data-theme] .theme-toggle:hover {
+  border-color: var(--green) !important;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+
+html[data-theme] .theme-dropdown {
+  background: #fff !important;
+  color: #252525 !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 18px !important;
+  padding: 18px !important;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.15) !important;
+}
+
+html[data-theme] .theme-dropdown-heading strong {
+  color: #252525 !important;
+  font-size: 15px;
+}
+
+html[data-theme] .theme-dropdown-heading span,
+html[data-theme] .theme-footer {
+  color: #777 !important;
+}
+
+/* Theme choices */
+html[data-theme] .theme-choice {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px !important;
+  background: #fff !important;
+  color: #333 !important;
+  border: 1px solid #e8e8e8 !important;
+  border-radius: 12px !important;
+  transition: all 0.18s ease;
+}
+
+html[data-theme] .theme-choice:hover {
+  background: #f8f8f8 !important;
+  border-color: var(--green) !important;
+  transform: translateY(-1px);
+}
+
+html[data-theme] .theme-choice.selected {
+  background: var(--green-light) !important;
+  color: #222 !important;
+  border: 1.5px solid var(--green) !important;
+  font-weight: 700;
+}
+
+html[data-theme] .theme-swatch {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+/* Consistent active navigation */
+html[data-theme] .nav button.active {
+  background: var(--surface) !important;
+  color: var(--green) !important;
+  border-radius: 11px !important;
+}
+
+html[data-theme] .nav button:not(.active):hover {
+  color: var(--green) !important;
+  background: var(--surface) !important;
+  border-radius: 11px;
+}
+
+/* Small buttons retain compact sizing */
+html[data-theme] .btn.small {
+  padding: 7px 10px !important;
+  border-radius: 9px !important;
+}
+
+@media (max-width: 600px) {
+  html[data-theme] .theme-dropdown {
+    width: min(320px, calc(100vw - 24px));
+    padding: 13px !important;
+  }
+
+  html[data-theme] .theme-choice {
+    padding: 8px !important;
+    font-size: 12px;
+  }
+}
+
+/* ===== FIX THEME DROPDOWN POSITION ===== */
+
+.topbar {
+  position: relative;
+  overflow: visible !important;
+}
+
+/* Keep the theme options floating over the page */
+.theme-menu {
+  position: relative !important;
+  z-index: 300;
+}
+.theme-toggle {
+  position: relative;
+  z-index: 202;
+}
+
+/* Float the options below the Theme button */
+.theme-dropdown {
+  position: absolute !important;
+  top: calc(100% + 10px) !important;
+  right: 0 !important;
+  left: auto !important;
+  z-index: 301;
+  background: #ffffff !important;
+  max-height: min(70vh, 500px);
+  overflow-y: auto;
+}
+
+/* The backdrop must not move the page */
+.theme-backdrop {
+  display: none !important;
+}
+
+
+/* Keep the top bar and dashboard layout intact */
+.topbar,
+.top-actions {
+  overflow: visible !important;
+}
+
+@media (max-width: 600px) {
+  .theme-dropdown {
+    right: -4px !important;
+    width: min(320px, calc(100vw - 24px));
+    max-height: 65vh;
+  }
+}
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.top-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+
